@@ -1,0 +1,4 @@
+/* Élan : affiche la version ordinateur ou mobile selon la largeur de l'écran */
+.view-mobile{display:none}
+@media (max-width:1199px){.view-desktop{display:none}.view-mobile{display:block}}
+img,video{max-width:100%}
