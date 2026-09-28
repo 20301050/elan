@@ -3,166 +3,363 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Élan · Nos coachs</title>
-<meta name="description" content="Élan, studio multi-activités à Paris : boxe, HIIT, cardio, renforcement, Pilates et yoga.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&amp;family=Barlow:wght@400;500;600&amp;display=swap">
-<link rel="stylesheet" href="assets/elan.css">
+<title>Nos coachs – Boxe, Yoga, Pilates, HIIT | Élan Paris 11e</title>
+<meta name="description" content="Découvre les 10 coachs diplômés d’Élan, salle de sport à Paris 11e : boxe, yoga, Pilates, HIIT, renforcement et cardio. Ta première séance d’essai est offerte.">
+<meta name="robots" content="index, follow">
+<!-- Remplace l'adresse ci-dessous par l'URL réelle de la page sur GitHub Pages -->
+<link rel="canonical" href="https://TON-PSEUDO.github.io/TON-DEPOT/coachs.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Élan">
+<meta property="og:title" content="Nos coachs – Élan, salle de sport à Paris 11e">
+<meta property="og:description" content="10 coachs, 6 disciplines. Ils te guident, te corrigent et te poussent à progresser, à ton rythme.">
+<meta property="og:image" content="images/video-coachs-elan-apercu.jpg">
+<meta name="theme-color" content="#1B242D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Élan",
+  "description": "Salle de sport multi-activités : boxe, yoga, Pilates, HIIT, renforcement musculaire et cardio non motorisé.",
+  "telephone": "+33199002742",
+  "email": "contact@studio-elan.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "27 rue Oberkampf",
+    "postalCode": "75011",
+    "addressLocality": "Paris",
+    "addressCountry": "FR"
+  },
+  "openingHours": ["Mo-Fr 06:30-22:00", "Sa 08:00-20:00", "Su 09:00-19:00"]
+}
+</script>
 <style>
-body{margin:0;font-family:Barlow,'Helvetica Neue',sans-serif;background:#EBE8D2;color:#1B242D}
-a{color:#E7604F}a:hover{color:#F07A6A}
+:root{--nuit:#1B242D;--nuit-2:#141B22;--corail:#E7604F;--bordeaux:#7C3A44;--sable:#EBE8D2;--gris:#D8DCDA;--texte:#3A4652;--pad:80px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Barlow,'Helvetica Neue',Arial,sans-serif;background:var(--sable);color:var(--nuit)}
+img,video{max-width:100%}
+a{color:var(--corail)}
+:focus-visible{outline:3px solid var(--corail);outline-offset:3px}
+.cond{font-family:'Barlow Condensed','Arial Narrow',sans-serif}
+.skip{position:absolute;left:-9999px}.skip:focus{left:16px;top:16px;z-index:10;background:#fff;padding:8px 12px}
+
+/* En-tête */
+.header{background:var(--nuit);min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 var(--pad);flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font:800 34px/1 'Barlow Condensed',sans-serif;letter-spacing:3px}
+.logo svg{width:1em;height:1.05em;fill:var(--corail)}
+.nav{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.nav a{color:var(--gris);text-decoration:none;font-weight:500;font-size:16px;padding:10px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--corail)}
+.btn{min-height:44px;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:var(--corail);color:var(--nuit);font:700 16px 'Barlow Condensed',sans-serif;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none}
+.btn:hover{background:#F07A6A}
+
+/* Hero */
+.hero{background:var(--nuit);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));min-height:620px}
+.hero-texte{padding:80px 64px 80px var(--pad);display:flex;flex-direction:column;justify-content:center;gap:26px}
+.eyebrow{display:flex;align-items:center;gap:14px;color:var(--corail);font:600 18px 'Barlow Condensed',sans-serif;letter-spacing:4px;text-transform:uppercase;margin:0}
+.eyebrow::before{content:"";width:40px;height:3px;background:var(--corail)}
+.hero h1{margin:0;font:800 92px/.92 'Barlow Condensed',sans-serif;text-transform:uppercase;color:#fff}
+.hero h1 span{color:var(--corail)}
+.hero p.intro{margin:0;max-width:520px;font-size:19px;line-height:1.55;color:var(--gris)}
+.chiffres{display:flex;gap:40px;margin:0;padding:0;list-style:none}
+.chiffres strong{display:block;font:800 56px/1 'Barlow Condensed',sans-serif;color:var(--corail)}
+.chiffres span{font-size:15px;letter-spacing:1px;text-transform:uppercase;color:var(--gris)}
+.hero-video{position:relative;overflow:hidden;background:var(--nuit-2)}
+.hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+
+/* Bandeau */
+.bandeau{background:var(--corail);display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px 48px;padding:18px 20px;margin:0;list-style:none}
+.bandeau li{font:800 22px 'Barlow Condensed',sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--nuit)}
+
+/* Coachs */
+.equipe{padding:96px var(--pad) 112px;display:flex;flex-direction:column;gap:40px}
+.equipe h2,.cta h2{margin:0;font:800 64px/1 'Barlow Condensed',sans-serif;text-transform:uppercase}
+.equipe .sous-titre{margin:14px 0 0;max-width:620px;font-size:18px;line-height:1.55;color:var(--texte)}
+.filtres{display:flex;flex-wrap:wrap;gap:10px}
+.pill{min-height:44px;padding:0 18px;border-radius:999px;border:2px solid var(--nuit);background:transparent;color:var(--nuit);font:700 16px 'Barlow Condensed',sans-serif;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--nuit);color:#fff}
+.grille{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+.coach{background:#fff;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.coach[hidden]{display:none}
+.coach-photo{position:relative;height:280px;background:#26323E}
+.coach-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 12%}
+.coach-tag{position:absolute;top:12px;left:12px;background:var(--corail);color:var(--nuit);font:700 13px 'Barlow Condensed',sans-serif;letter-spacing:1.2px;text-transform:uppercase;padding:5px 10px;border-radius:4px}
+.coach-body{padding:20px;display:flex;flex-direction:column;gap:8px;flex-grow:1}
+.coach h3{margin:0;font:800 26px/1.05 'Barlow Condensed',sans-serif;text-transform:uppercase}
+.coach-role{margin:0;font-size:15px;font-weight:600;color:var(--bordeaux)}
+.coach-bio{margin:0;font-size:14px;line-height:1.45;color:var(--texte)}
+.coach-link{margin-top:auto;padding-top:6px;min-height:44px;display:flex;align-items:center;gap:6px;font:700 15px 'Barlow Condensed',sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:var(--nuit);text-decoration:none}
+.coach-link span{color:var(--corail)}
+
+/* Appel à l'action */
+.cta{background:var(--bordeaux);padding:88px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:48px}
+.cta h2{color:#fff;line-height:.95}.cta h2 span{color:#F2A597}
+.cta p{margin:16px 0 0;font-size:18px;line-height:1.55;color:var(--sable);max-width:760px}
+.cta .btn{min-height:52px;padding:0 28px;font-size:18px;letter-spacing:2px;flex-shrink:0}
+
+/* Pied de page */
+.footer{background:var(--nuit-2);padding:64px var(--pad);display:flex;justify-content:space-between;gap:48px;flex-wrap:wrap;color:#B9C0C4}
+.footer .logo{font-size:30px}
+.footer-cols{display:flex;gap:72px;flex-wrap:wrap;font-size:15px;line-height:2;font-style:normal}
+.footer-cols h2{margin:0;font:700 16px 'Barlow Condensed',sans-serif;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.footer-cols p{margin:0}
+.footer-cols a{color:#B9C0C4}
+.legal{background:var(--nuit-2);border-top:1px solid #2E3A46;padding:14px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px 32px;flex-wrap:wrap;font-size:14px;color:#B9C0C4}
+.legal nav{display:flex;gap:28px}
+.legal a{min-height:44px;display:flex;align-items:center;color:#fff}
+
+/* Tablette */
+@media (max-width:1200px){.grille{grid-template-columns:repeat(3,minmax(0,1fr))}.hero h1{font-size:72px}}
+@media (max-width:900px){
+  :root{--pad:32px}
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-texte{padding:56px var(--pad)}
+  .hero-video{height:420px}
+  .grille{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cta{flex-direction:column;align-items:flex-start}
+}
+/* Mobile */
+@media (max-width:600px){
+  :root{--pad:20px}
+  .header{padding:14px var(--pad)}
+  .nav{gap:4px 18px}
+  .hero h1{font-size:56px}
+  .hero p.intro{font-size:17px}
+  .hero-video{height:320px;margin:0 var(--pad) 44px;border-radius:14px}
+  .bandeau li{font-size:16px;letter-spacing:3px}
+  .equipe{padding:56px var(--pad) 64px}
+  .equipe h2,.cta h2{font-size:44px}
+  .grille{grid-template-columns:1fr}
+  .coach-photo{height:340px}
+  .cta{padding:56px var(--pad)}
+  .footer-cols{gap:28px}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<!-- Version ordinateur -->
-<template id="tpl-desktop">
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-<div style="width: 100%; min-width: 1200px; display: flex; flex-direction: column; background: #EBE8D2;">
-<header style="height: 88px; flex-shrink: 0; background: #1B242D; display: flex; align-items: center; justify-content: space-between; padding: 0 80px; box-sizing: border-box;">
-<a href="index.html" aria-label="Élan, retour à l’accueil" style="text-decoration: none; display: flex; align-items: center; gap: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 34px; letter-spacing: 3px; color: #FFFFFF;"><svg viewBox="3 1 36 38" aria-hidden="true" style="width: 1em; height: 1.05em; flex-shrink: 0; fill: #E7604F;"><polygon points="21,9 29,1.5 35,1.5 27,9"></polygon><polygon points="9,12 39,12 37.4,19 7.4,19"></polygon><polygon points="6.9,22 30,22 28.4,29 5.3,29"></polygon><polygon points="4.8,32 34.8,32 33.2,39 3.2,39"></polygon></svg><span style="line-height: 1;">ÉLAN</span></a>
-<nav style="display: flex; gap: 36px; align-items: center;"><a href="index.html" style="color: #D8DCDA; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 0; border-bottom: 2px solid transparent;">Accueil</a><a href="activites.html" style="color: #D8DCDA; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 0; border-bottom: 2px solid transparent;">Nos activités</a><a href="planning.html" style="color: #D8DCDA; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 0; border-bottom: 2px solid transparent;">Planning</a><a href="tarifs.html" style="color: #D8DCDA; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 0; border-bottom: 2px solid transparent;">Tarifs</a><a href="coachs.html" style="color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 10px 0; border-bottom: 2px solid #E7604F;">Coachs</a><a href="actualites.html" style="color: #D8DCDA; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 0; border-bottom: 2px solid transparent;">Actualités</a><a href="contact.html" style="color: #D8DCDA; text-decoration: none; font-weight: 500; font-size: 16px; padding: 10px 0; border-bottom: 2px solid transparent;">Contact</a></nav>
-<a href="contact.html" style="min-height: 44px; padding: 0 22px; display: flex; align-items: center; border-radius: 8px; background: #E7604F; color: #1B242D; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 1.5px; text-transform: uppercase; text-decoration: none;">Séance d’essai</a>
+<header class="header">
+  <a class="logo" href="index.html" aria-label="Élan, retour à l’accueil">
+    <svg viewBox="3 1 36 38" aria-hidden="true"><polygon points="21,9 29,1.5 35,1.5 27,9"/><polygon points="9,12 39,12 37.4,19 7.4,19"/><polygon points="6.9,22 30,22 28.4,29 5.3,29"/><polygon points="4.8,32 34.8,32 33.2,39 3.2,39"/></svg>ÉLAN
+  </a>
+  <nav class="nav" aria-label="Menu principal">
+    <a href="index.html">Accueil</a>
+    <a href="activites.html">Nos activités</a>
+    <a href="planning.html">Planning</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="coachs.html" aria-current="page">Coachs</a>
+    <a href="actualites.html">Actualités</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="btn" href="contact.html">Séance d’essai</a>
 </header>
-<section style="min-height: 620px; flex-shrink: 0; background: #1B242D; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));">
-<div style="padding: 80px 64px 80px 80px; display: flex; flex-direction: column; justify-content: center; gap: 26px;">
-<div style="display: flex; align-items: center; gap: 14px;"><span style="width: 40px; height: 3px; background: #E7604F;"></span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 4px; text-transform: uppercase; color: #E7604F;">Nos coachs</span></div>
-<h1 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 92px; line-height: 0.92; text-transform: uppercase; color: #FFFFFF;">L’équipe qui<br>te fait <span style="color: #E7604F;">avancer.</span></h1>
-<p style="margin: 0; max-width: 520px; font-size: 19px; line-height: 1.55; color: #D8DCDA;">10 coachs, 6 disciplines. Ils te guident, te corrigent et te poussent à progresser, à ton rythme.</p>
-<div style="display: flex; gap: 40px;">
-<div style="display: flex; flex-direction: column;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 56px; line-height: 1; color: #E7604F;">10</span><span style="font-size: 15px; letter-spacing: 1px; text-transform: uppercase; color: #D8DCDA;">coachs</span></div>
-<div style="display: flex; flex-direction: column;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 56px; line-height: 1; color: #E7604F;">6</span><span style="font-size: 15px; letter-spacing: 1px; text-transform: uppercase; color: #D8DCDA;">activités</span></div>
-</div>
-</div>
-<div style="position: relative; overflow: hidden;"><video src="images/coach-video.mp4" poster="images/img-55ec4bad.jpg" autoplay="" muted="" loop="" playsinline="" controls="" preload="metadata" aria-label="Vidéo de présentation d’un coach Élan" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%;"></video></div>
-</section>
-<div style="height: 64px; flex-shrink: 0; background: #E7604F; display: flex; align-items: center; justify-content: center; gap: 48px;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 4px; text-transform: uppercase; color: #1B242D;">Dynamique</span><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #1B242D;"></span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 4px; text-transform: uppercase; color: #1B242D;">Urbaine</span><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #1B242D;"></span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 4px; text-transform: uppercase; color: #1B242D;">Polyvalente</span><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: #1B242D;"></span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 4px; text-transform: uppercase; color: #1B242D;">Motivante</span></div>
-<section style="padding: 96px 80px 112px; display: flex; flex-direction: column; gap: 40px;">
-<div style="display: flex; flex-direction: column; gap: 14px;"><h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 64px; line-height: 1; text-transform: uppercase; color: #1B242D;">Trouve ton coach</h2>
-<p style="margin: 0; max-width: 620px; font-size: 18px; line-height: 1.55; color: #3A4652;">Choisis une activité pour voir les coachs qui l’enseignent.</p></div>
-<div style="display: flex; flex-wrap: wrap; gap: 10px;"><sc-for list="{{pills}}" as="p" hint-placeholder-count="7"><button type="button" onClick="{{p.pick}}" style="{{p.style}} min-height: 44px; padding: 0 18px; border-radius: 999px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer;">{{p.label}}</button></sc-for></div>
-<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px;"><sc-for list="{{coachs}}" as="c" hint-placeholder-count="10"><article style="background: #FFFFFF; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column;"><div style="position: relative; height: 280px; background: #26323E; overflow: hidden;"><sc-if value="{{c.hasPhoto}}" hint-placeholder-val="{{false}}"><img src="{{c.photo}}" alt="Portrait du coach" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 12%;"></sc-if><sc-if value="{{c.noPhoto}}" hint-placeholder-val="{{true}}"><svg viewBox="0 0 260 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" style="display: block; width: 100%; height: 100%;"><circle cx="130" cy="120" r="110" fill="{{c.accent}}" opacity="0.22"></circle><circle cx="130" cy="112" r="46" fill="#3A4652"></circle><path d="M30 300 C30 220 70 180 130 180 C190 180 230 220 230 300 Z" fill="#3A4652"></path></svg></sc-if><span style="position: absolute; top: 12px; left: 12px; background: #E7604F; color: #1B242D; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; padding: 5px 10px; border-radius: 4px;">{{c.act}}</span><sc-if value="{{c.noPhoto}}" hint-placeholder-val="{{true}}"><span style="position: absolute; bottom: 10px; right: 12px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #B9C0C4;">Photo · {{c.numero}}</span></sc-if></div><div style="padding: 20px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1;"><h3 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 26px; line-height: 1.05; text-transform: uppercase; color: #1B242D;">{{c.nom}}</h3><div style="font-size: 15px; font-weight: 600; color: #7C3A44;">Coach {{c.act}}</div><p style="margin: 0; font-size: 14px; line-height: 1.45; color: #3A4652;">{{c.bio}}</p><a href="activites.html" style="margin-top: auto; padding-top: 6px; min-height: 44px; display: flex; align-items: center; gap: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 1.2px; text-transform: uppercase; color: #1B242D; text-decoration: none;">Voir ses cours <span aria-hidden="true" style="color: #E7604F;">→</span></a></div></article></sc-for></div>
-</section>
-<section style="background: #7C3A44; padding: 88px 80px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px;">
-<h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 64px; line-height: 0.95; text-transform: uppercase; color: #FFFFFF;">Rencontre ton coach<br><span style="color: #F2A597;">sur le tapis.</span></h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #EBE8D2;">Réserve une séance d’essai : ton coach fait le point avec toi sur tes objectifs. Ta première séance est offerte, sans engagement.</p></div>
-<a href="contact.html" style="background: #E7604F; color: #1B242D; min-height: 52px; padding: 0 28px;  display: flex; align-items: center; justify-content: center; border-radius: 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none;">Réserver ma séance d’essai</a>
-</section>
-<footer style="background: #141B22; padding: 64px 80px; display: flex; justify-content: space-between; gap: 48px;">
-<div style="display: flex; flex-direction: column; gap: 14px;"><a href="index.html" aria-label="Élan, retour à l’accueil" style="text-decoration: none; display: flex; align-items: center; gap: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 30px; letter-spacing: 3px; color: #FFFFFF;"><svg viewBox="3 1 36 38" aria-hidden="true" style="width: 1em; height: 1.05em; flex-shrink: 0; fill: #E7604F;"><polygon points="21,9 29,1.5 35,1.5 27,9"></polygon><polygon points="9,12 39,12 37.4,19 7.4,19"></polygon><polygon points="6.9,22 30,22 28.4,29 5.3,29"></polygon><polygon points="4.8,32 34.8,32 33.2,39 3.2,39"></polygon></svg><span style="line-height: 1;">ÉLAN</span></a><span style="font-size: 15px; color: #B9C0C4;">Mouvement · Liberté · Progression</span></div>
-<div style="display: flex; gap: 72px; font-size: 15px; line-height: 2; color: #B9C0C4;">
-<div style="display: flex; flex-direction: column;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Studio</span><span>27 rue Oberkampf, 75011 Paris</span><span>Lun–ven 6h30–22h · Sam 8h–20h · Dim 9h–19h</span></div>
-<div style="display: flex; flex-direction: column;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Contact</span><span>01 99 00 27 42</span><span>contact@studio-elan.fr</span></div>
-<div style="display: flex; flex-direction: column;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; color: #FFFFFF;">Suivre Élan</span><span>Instagram</span><span>Facebook</span></div>
-</div></footer>
-<div style="background: #141B22; border-top: 1px solid #2E3A46; padding: 14px 80px; display: flex; align-items: center; justify-content: space-between; gap: 32px; font-size: 14px; color: #B9C0C4;"><span>© 2026 Élan · Site fictif réalisé par Studio Nova, projet étudiant Digital Campus Paris.</span><div style="display: flex; gap: 28px;"><a href="mentions-legales.html" style="min-height: 44px; display: flex; align-items: center; color: #FFFFFF; text-decoration: underline;">Mentions légales</a><a href="mentions-legales.html" style="min-height: 44px; display: flex; align-items: center; color: #FFFFFF; text-decoration: underline;">Politique de confidentialité</a></div></div>
-</div>
-</template>
-<div class="view-desktop" id="root-desktop"></div>
-<!-- Version mobile -->
-<template id="tpl-mobile">
 
-<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; background: #EBE8D2; overflow: hidden; position: relative;">
-<header style="height: 68px; flex-shrink: 0; background: #1B242D; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; box-sizing: border-box;">
-<a href="index.html" aria-label="Élan, retour à l’accueil" style="text-decoration: none; display: flex; align-items: center; gap: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: 3px; color: #FFFFFF;"><svg viewBox="3 1 36 38" aria-hidden="true" style="width: 1em; height: 1.05em; flex-shrink: 0; fill: #E7604F;"><polygon points="21,9 29,1.5 35,1.5 27,9"></polygon><polygon points="9,12 39,12 37.4,19 7.4,19"></polygon><polygon points="6.9,22 30,22 28.4,29 5.3,29"></polygon><polygon points="4.8,32 34.8,32 33.2,39 3.2,39"></polygon></svg><span style="line-height: 1;">ÉLAN</span></a>
-<button type="button" aria-label="{{ menuLabel }}" aria-expanded="{{ menuExpanded }}" onClick="{{ toggleMenu }}" style="width: 44px; height: 44px; border: none; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer;"><sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h10"></path></svg></sc-if><sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12"></path><path d="M18 6L6 18"></path></svg></sc-if></button>
-</header><sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}"><nav aria-label="Menu principal" style="position: absolute; top: 68px; left: 0; right: 0; z-index: 50; background: #1B242D; padding: 12px 20px 28px; display: flex; flex-direction: column; gap: 0; box-shadow: 0 24px 40px rgba(20,27,34,0.45); border-top: 3px solid #E7604F;"><a href="index.html" style="min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2E3A46; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #FFFFFF;">Accueil<span aria-hidden="true" style="font-size: 22px; color: #E7604F;">→</span></a><a href="activites.html" style="min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2E3A46; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #FFFFFF;">Nos activités<span aria-hidden="true" style="font-size: 22px; color: #E7604F;">→</span></a><a href="planning.html" style="min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2E3A46; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #FFFFFF;">Planning<span aria-hidden="true" style="font-size: 22px; color: #E7604F;">→</span></a><a href="tarifs.html" style="min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2E3A46; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #FFFFFF;">Tarifs<span aria-hidden="true" style="font-size: 22px; color: #E7604F;">→</span></a><a href="coachs.html" style="min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2E3A46; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #E7604F;">Coachs<span aria-hidden="true" style="font-size: 22px; color: #E7604F;">→</span></a><a href="actualites.html" style="min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2E3A46; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #FFFFFF;">Actualités<span aria-hidden="true" style="font-size: 22px; color: #E7604F;">→</span></a><a href="contact.html" style="min-height: 56px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2E3A46; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #FFFFFF;">Contact<span aria-hidden="true" style="font-size: 22px; color: #E7604F;">→</span></a><a href="contact.html" style="margin-top: 24px; background: #E7604F; color: #1B242D; min-height: 52px; padding: 0 28px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none;">Réserver ma séance d’essai</a><span style="margin-top: 20px; font-size: 14px; line-height: 1.5; color: #B9C0C4;">27 rue Oberkampf, 75011 Paris · 01 99 00 27 42</span></nav></sc-if>
-<section style="background: #1B242D; padding: 40px 20px 44px; display: flex; flex-direction: column; gap: 20px;">
-<div style="display: flex; align-items: center; gap: 12px;"><span style="width: 28px; height: 3px; background: #E7604F;"></span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 3px; text-transform: uppercase; color: #E7604F;">Nos coachs</span></div>
-<h1 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 56px; line-height: 0.92; text-transform: uppercase; color: #FFFFFF;">L’équipe qui te fait <span style="color: #E7604F;">avancer.</span></h1>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #D8DCDA;">10 coachs, 6 disciplines. Ils te guident, te corrigent et te poussent à progresser, à ton rythme.</p>
-<div style="position: relative; width: 100%; height: 320px; border-radius: 14px; overflow: hidden; background: #141B22;"><video src="images/coach-video.mp4" poster="images/img-55ec4bad.jpg" autoplay="" muted="" loop="" playsinline="" controls="" preload="metadata" aria-label="Vidéo de présentation d’un coach Élan" style="display: block; width: 100%; height: 320px; object-fit: cover; object-position: center 25%; "></video></div>
-</section>
-<div style="flex-shrink: 0; background: #E7604F; padding: 14px 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 3px; text-transform: uppercase; color: #1B242D;">Dynamique</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 3px; text-transform: uppercase; color: #1B242D;">Urbaine</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 3px; text-transform: uppercase; color: #1B242D;">Polyvalente</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 3px; text-transform: uppercase; color: #1B242D;">Motivante</span></div>
-<section style="padding: 44px 16px 52px; display: flex; flex-direction: column; gap: 20px;">
-<h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 42px; line-height: 1; text-transform: uppercase; color: #1B242D;">Trouve ton coach</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 8px;"><sc-for list="{{pills}}" as="p" hint-placeholder-count="7"><button type="button" onClick="{{p.pick}}" style="{{p.style}} min-height: 44px; padding: 0 18px; border-radius: 999px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; cursor: pointer;">{{p.label}}</button></sc-for></div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;"><sc-for list="{{coachs}}" as="c" hint-placeholder-count="10"><article style="background: #FFFFFF; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column;"><div style="position: relative; height: 190px; background: #26323E; overflow: hidden;"><sc-if value="{{c.hasPhoto}}" hint-placeholder-val="{{false}}"><img src="{{c.photo}}" alt="Portrait du coach" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 12%;"></sc-if><sc-if value="{{c.noPhoto}}" hint-placeholder-val="{{true}}"><svg viewBox="0 0 260 300" preserveAspectRatio="xMidYMax slice" aria-hidden="true" style="display: block; width: 100%; height: 100%;"><circle cx="130" cy="120" r="110" fill="{{c.accent}}" opacity="0.22"></circle><circle cx="130" cy="112" r="46" fill="#3A4652"></circle><path d="M30 300 C30 220 70 180 130 180 C190 180 230 220 230 300 Z" fill="#3A4652"></path></svg></sc-if><span style="position: absolute; top: 12px; left: 12px; background: #E7604F; color: #1B242D; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1.2px; text-transform: uppercase; padding: 5px 10px; border-radius: 4px;">{{c.act}}</span><sc-if value="{{c.noPhoto}}" hint-placeholder-val="{{true}}"><span style="position: absolute; bottom: 10px; right: 12px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #B9C0C4;">Photo · {{c.numero}}</span></sc-if></div><div style="padding: 14px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1;"><h3 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 20px; line-height: 1.05; text-transform: uppercase; color: #1B242D;">{{c.nom}}</h3><div style="font-size: 15px; font-weight: 600; color: #7C3A44;">Coach {{c.act}}</div><p style="margin: 0; font-size: 14px; line-height: 1.45; color: #3A4652;">{{c.bio}}</p><a href="activites.html" style="margin-top: auto; padding-top: 6px; min-height: 44px; display: flex; align-items: center; gap: 6px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 1.2px; text-transform: uppercase; color: #1B242D; text-decoration: none;">Voir ses cours <span aria-hidden="true" style="color: #E7604F;">→</span></a></div></article></sc-for></div>
-</section>
-<section style="background: #7C3A44; padding: 52px 20px; display: flex; flex-direction: column; gap: 18px;">
-<h2 style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 42px; line-height: 0.95; text-transform: uppercase; color: #FFFFFF;">Rencontre ton coach <span style="color: #F2A597;">sur le tapis.</span></h2>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #EBE8D2;">Réserve une séance d’essai : ton coach fait le point avec toi sur tes objectifs. Ta première séance est offerte, sans engagement.</p>
-<a href="contact.html" style="background: #E7604F; color: #1B242D; min-height: 52px; padding: 0 28px; width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none;">Réserver ma séance d’essai</a>
-</section>
-<footer style="flex-grow: 1; background: #141B22; padding: 44px 20px; display: flex; flex-direction: column; gap: 22px; font-size: 15px; line-height: 1.9; color: #B9C0C4;">
-<a href="index.html" aria-label="Élan, retour à l’accueil" style="text-decoration: none; display: flex; align-items: center; gap: 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 3px; color: #FFFFFF;"><svg viewBox="3 1 36 38" aria-hidden="true" style="width: 1em; height: 1.05em; flex-shrink: 0; fill: #E7604F;"><polygon points="21,9 29,1.5 35,1.5 27,9"></polygon><polygon points="9,12 39,12 37.4,19 7.4,19"></polygon><polygon points="6.9,22 30,22 28.4,29 5.3,29"></polygon><polygon points="4.8,32 34.8,32 33.2,39 3.2,39"></polygon></svg><span style="line-height: 1;">ÉLAN</span></a><span>Mouvement · Liberté · Progression</span>
-<div style="display: flex; flex-direction: column;"><span>27 rue Oberkampf, 75011 Paris · Lun–ven 6h30–22h · Sam 8h–20h · Dim 9h–19h</span><span>01 99 00 27 42 · contact@studio-elan.fr</span><span>Instagram · Facebook</span></div>
-<div style="border-top: 1px solid #2E3A46; padding-top: 18px; display: flex; flex-direction: column; gap: 4px; font-size: 14px; line-height: 1.5;"><a href="mentions-legales.html" style="min-height: 44px; display: flex; align-items: center; color: #FFFFFF; text-decoration: underline;">Mentions légales</a><a href="mentions-legales.html" style="min-height: 44px; display: flex; align-items: center; color: #FFFFFF; text-decoration: underline;">Politique de confidentialité</a><span>© 2026 Élan · Site fictif réalisé par Studio Nova, projet étudiant Digital Campus Paris.</span></div>
+<main id="contenu">
+  <section class="hero" aria-labelledby="titre-page">
+    <div class="hero-texte">
+      <p class="eyebrow">Nos coachs</p>
+      <h1 id="titre-page">Nos coachs sportifs<br>à Paris <span>11e.</span></h1>
+      <p class="intro">10 coachs, 6 disciplines. Ils te guident, te corrigent et te poussent à progresser, à ton rythme.</p>
+      <ul class="chiffres">
+        <li><strong>10</strong><span>coachs</span></li>
+        <li><strong>6</strong><span>activités</span></li>
+      </ul>
+    </div>
+    <div class="hero-video">
+      <video controls playsinline preload="metadata" poster="images/video-coachs-elan-apercu.jpg" aria-label="Vidéo de présentation d’un coach Élan">
+        <source src="videos/presentation-coachs-elan.mp4" type="video/mp4">
+        Ton navigateur ne lit pas la vidéo. <a href="videos/presentation-coachs-elan.mp4">Télécharger la vidéo</a>.
+      </video>
+    </div>
+  </section>
+
+  <ul class="bandeau" aria-label="Nos valeurs">
+    <li>Dynamique</li><li>Urbaine</li><li>Polyvalente</li><li>Motivante</li>
+  </ul>
+
+  <section class="equipe" aria-labelledby="titre-equipe">
+    <div>
+      <h2 id="titre-equipe">Trouve ton coach</h2>
+      <p class="sous-titre">Choisis une activité pour voir les coachs qui l’enseignent.</p>
+    </div>
+    <div class="filtres" role="group" aria-label="Filtrer les coachs par activité">
+          <button type="button" class="pill" data-filtre="Tous" aria-pressed="true">Tous (10)</button>
+          <button type="button" class="pill" data-filtre="Boxe" aria-pressed="false">Boxe (2)</button>
+          <button type="button" class="pill" data-filtre="HIIT" aria-pressed="false">HIIT (2)</button>
+          <button type="button" class="pill" data-filtre="Cardio non motorisé" aria-pressed="false">Cardio non motorisé (2)</button>
+          <button type="button" class="pill" data-filtre="Renforcement" aria-pressed="false">Renforcement (2)</button>
+          <button type="button" class="pill" data-filtre="Pilates" aria-pressed="false">Pilates (2)</button>
+          <button type="button" class="pill" data-filtre="Yoga" aria-pressed="false">Yoga (2)</button>
+    </div>
+    <p class="sr-only" id="resultat" aria-live="polite" style="position:absolute;left:-9999px"></p>
+    <div class="grille">
+        <article class="coach" data-tags="Boxe">
+          <div class="coach-photo">
+            <img src="images/coach-boxe-gocha.jpg" alt="Gocha M., coach Boxe au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Boxe</span>
+          </div>
+          <div class="coach-body">
+            <h3>Gocha M.</h3>
+            <p class="coach-role">Coach Boxe</p>
+            <p class="coach-bio">Diplômée BPJEPS boxe, 8 ans d’expérience. Gocha t’apprend les bases techniques, puis te pousse au sac avec énergie et bonne humeur.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="Boxe">
+          <div class="coach-photo">
+            <img src="images/coach-boxe-yanis.jpg" alt="Yanis B., coach Boxe au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Boxe</span>
+          </div>
+          <div class="coach-body">
+            <h3>Yanis B.</h3>
+            <p class="coach-role">Coach Boxe</p>
+            <p class="coach-bio">Ancien boxeur amateur, 10 ans sur le ring. Garde, déplacements et cardio : des cours exigeants mais toujours bienveillants.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="HIIT|Cardio non motorisé">
+          <div class="coach-photo">
+            <img src="images/coach-hiit-hugo.jpg" alt="Hugo L., coach HIIT & Cardio au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">HIIT & Cardio</span>
+          </div>
+          <div class="coach-body">
+            <h3>Hugo L.</h3>
+            <p class="coach-role">Coach HIIT & Cardio</p>
+            <p class="coach-bio">Coach certifié CrossFit L2, 6 ans d’expérience. Circuits courts et intenses, rameur et air bike : on se dépasse en groupe.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="HIIT|Cardio non motorisé">
+          <div class="coach-photo">
+            <img src="images/coach-hiit-masha.jpg" alt="Masha R., coach HIIT & Cardio au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">HIIT & Cardio</span>
+          </div>
+          <div class="coach-body">
+            <h3>Masha R.</h3>
+            <p class="coach-role">Coach HIIT & Cardio</p>
+            <p class="coach-bio">BPJEPS Activités de la forme, 5 ans d’expérience. Masha enchaîne les exercices en rythme et adapte chaque mouvement à ton niveau.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="Renforcement">
+          <div class="coach-photo">
+            <img src="images/coach-renforcement-raph.jpg" alt="Raph D., coach Renforcement au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Renforcement</span>
+          </div>
+          <div class="coach-body">
+            <h3>Raph D.</h3>
+            <p class="coach-role">Coach Renforcement</p>
+            <p class="coach-bio">Force, tonicité et posture : Raph te fait progresser à ton rythme. Des séances progressives et encadrées pour des résultats durables.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="Pilates">
+          <div class="coach-photo">
+            <img src="images/coach-pilates-clara.jpg" alt="Clara V., coach Pilates au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Pilates</span>
+          </div>
+          <div class="coach-body">
+            <h3>Clara V.</h3>
+            <p class="coach-role">Coach Pilates</p>
+            <p class="coach-bio">Gainage, souplesse et posture : un Pilates précis pour renforcer le corps en profondeur. Des séances douces et efficaces, adaptées à tous les niveaux.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="Renforcement">
+          <div class="coach-photo">
+            <img src="images/coach-renforcement-ines.jpg" alt="Inès T., coach Renforcement au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Renforcement</span>
+          </div>
+          <div class="coach-body">
+            <h3>Inès T.</h3>
+            <p class="coach-role">Coach Renforcement</p>
+            <p class="coach-bio">Préparatrice physique diplômée STAPS, 7 ans d’expérience. Squats, tirages, gainage : Inès soigne la technique avant la charge.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="Yoga">
+          <div class="coach-photo">
+            <img src="images/coach-yoga-samuel.jpg" alt="Samuel A., coach Yoga au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Yoga</span>
+          </div>
+          <div class="coach-body">
+            <h3>Samuel A.</h3>
+            <p class="coach-role">Coach Yoga</p>
+            <p class="coach-bio">Souplesse, respiration et équilibre : un yoga accessible à tous les niveaux. Des séances apaisantes pour relâcher les tensions et retrouver ton énergie.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="Pilates">
+          <div class="coach-photo">
+            <img src="images/coach-pilates-marc.jpg" alt="Marc F., coach Pilates au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Pilates</span>
+          </div>
+          <div class="coach-body">
+            <h3>Marc F.</h3>
+            <p class="coach-role">Coach Pilates</p>
+            <p class="coach-bio">Formé au Pilates matwork et reformer, 12 ans d’expérience. Des séances précises pour un dos solide et une meilleure posture.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <article class="coach" data-tags="Yoga">
+          <div class="coach-photo">
+            <img src="images/coach-yoga-amina.jpg" alt="Amina N., coach Yoga au studio Élan à Paris 11e" width="400" height="560" loading="lazy" decoding="async">
+            <span class="coach-tag">Yoga</span>
+          </div>
+          <div class="coach-body">
+            <h3>Amina N.</h3>
+            <p class="coach-role">Coach Yoga</p>
+            <p class="coach-bio">Professeure de yoga certifiée 500 h, 9 ans d’expérience. Hatha et vinyasa doux pour respirer, t’étirer et te recentrer.</p>
+            <a class="coach-link" href="activites.html">Voir ses cours <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="titre-cta">
+    <div>
+      <h2 id="titre-cta">Rencontre ton coach<br><span>sur le tapis.</span></h2>
+      <p>Réserve une séance d’essai : ton coach fait le point avec toi sur tes objectifs. Ta première séance est offerte, sans engagement.</p>
+    </div>
+    <a class="btn" href="contact.html">Réserver ma séance d’essai</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <a class="logo" href="index.html" aria-label="Élan, retour à l’accueil">
+    <svg viewBox="3 1 36 38" aria-hidden="true"><polygon points="21,9 29,1.5 35,1.5 27,9"/><polygon points="9,12 39,12 37.4,19 7.4,19"/><polygon points="6.9,22 30,22 28.4,29 5.3,29"/><polygon points="4.8,32 34.8,32 33.2,39 3.2,39"/></svg>ÉLAN
+  </a>
+  <address class="footer-cols">
+    <div><h2>Studio</h2><p>27 rue Oberkampf, 75011 Paris</p><p>Lun–ven 6h30–22h · Sam 8h–20h · Dim 9h–19h</p></div>
+    <div><h2>Contact</h2><p><a href="tel:+33199002742">01 99 00 27 42</a></p><p><a href="mailto:contact@studio-elan.fr">contact@studio-elan.fr</a></p></div>
+    <div><h2>Suivre Élan</h2><p>Instagram</p><p>Facebook</p></div>
+  </address>
 </footer>
+<div class="legal">
+  <span>© 2026 Élan · Site fictif réalisé par Studio Nova, projet étudiant Digital Campus Paris.</span>
+  <nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a><a href="mentions-legales.html">Politique de confidentialité</a></nav>
 </div>
-</template>
-<div class="view-mobile" id="root-mobile"></div>
-<script src="assets/elan.js"></script>
+
 <script>
-Elan.mount("tpl-desktop", "root-desktop", (function () { 
-class Component extends DCLogic {
-constructor(props) { super(props); this.state = { filtre: 'Tous' }; }
-renderVals() {
-const acts = ['Tous'].concat(["Boxe", "HIIT", "Cardio non motorisé", "Renforcement", "Pilates", "Yoga"]);
-const all = [{"act": "Boxe", "tags": ["Boxe"], "n": 1, "nom": "Gocha M.", "bio": "Diplômée BPJEPS boxe, 8 ans d’expérience. Gocha t’apprend les bases techniques, puis te pousse au sac avec énergie et bonne humeur.", "photo": "images/img-5acad0f2.jpg"}, {"act": "Boxe", "tags": ["Boxe"], "n": 2, "nom": "Yanis B.", "bio": "Ancien boxeur amateur, 10 ans sur le ring. Garde, déplacements et cardio : des cours exigeants mais toujours bienveillants.", "photo": "images/img-c6d12198.jpg"}, {"act": "HIIT & Cardio", "tags": ["HIIT", "Cardio non motorisé"], "n": 3, "nom": "Hugo L.", "bio": "Coach certifié CrossFit L2, 6 ans d’expérience. Circuits courts et intenses, rameur et air bike : on se dépasse en groupe.", "photo": "images/img-84fa4dd2.jpg"}, {"act": "HIIT & Cardio", "tags": ["HIIT", "Cardio non motorisé"], "n": 4, "nom": "Masha R.", "bio": "BPJEPS Activités de la forme, 5 ans d’expérience. Masha enchaîne les exercices en rythme et adapte chaque mouvement à ton niveau.", "photo": "images/img-36afb77a.jpg"}, {"act": "Renforcement", "tags": ["Renforcement"], "n": 5, "nom": "Raph D.", "bio": "Force, tonicité et posture : Raph te fait progresser à ton rythme. Des séances progressives et encadrées pour des résultats durables.", "photo": "images/img-ff2ff88c.jpg"}, {"act": "Pilates", "tags": ["Pilates"], "n": 6, "nom": "Clara V.", "bio": "Gainage, souplesse et posture : un Pilates précis pour renforcer le corps en profondeur. Des séances douces et efficaces, adaptées à tous les niveaux.", "photo": "images/img-689cb41c.jpg"}, {"act": "Renforcement", "tags": ["Renforcement"], "n": 7, "nom": "Inès T.", "bio": "Préparatrice physique diplômée STAPS, 7 ans d’expérience. Squats, tirages, gainage : Inès soigne la technique avant la charge.", "photo": "images/img-40215da6.jpg"}, {"act": "Yoga", "tags": ["Yoga"], "n": 8, "nom": "Samuel A.", "bio": "Souplesse, respiration et équilibre : un yoga accessible à tous les niveaux. Des séances apaisantes pour relâcher les tensions et retrouver ton énergie.", "photo": "images/img-e9d1396d.jpg"}, {"act": "Pilates", "tags": ["Pilates"], "n": 9, "nom": "Marc F.", "bio": "Formé au Pilates matwork et reformer, 12 ans d’expérience. Des séances précises pour un dos solide et une meilleure posture.", "photo": "images/img-734f4351.jpg"}, {"act": "Yoga", "tags": ["Yoga"], "n": 10, "nom": "Amina N.", "bio": "Professeure de yoga certifiée 500 h, 9 ans d’expérience. Hatha et vinyasa doux pour respirer, t’étirer et te recentrer.", "photo": "images/img-4aa7b3d1.jpg"}];
-const f = this.state.filtre;
-const accents = ['#E7604F', '#7C3A44'];
-const coachs = all.filter((c) => f === 'Tous' || c.tags.indexOf(f) >= 0).map((c, i) => ({
-  act: c.act,
-  numero: 'Coach ' + c.n,
-  nom: c.nom || '[Prénom Nom]',
-  bio: c.bio || '[Diplôme · années d’expérience · une phrase sur son style]',
-  accent: accents[c.n % 2],
-  photo: c.photo,
-  hasPhoto: !!c.photo,
-  noPhoto: !c.photo
-}));
-const pills = acts.map((a) => {
-  const n = a === 'Tous' ? all.length : all.filter((c) => c.tags.indexOf(a) >= 0).length;
-  const on = a === f;
-  return {
-    label: a + ' (' + n + ')',
-    style: on ? 'background: #1B242D; color: #FFFFFF; border: 2px solid #1B242D;' : 'background: transparent; color: #1B242D; border: 2px solid #1B242D;',
-    pick: () => this.setState({ filtre: a })
-  };
-});
-return { pills: pills, coachs: coachs, total: coachs.length };
-}
-}
-
-  return Component; })());
-Elan.mount("tpl-mobile", "root-mobile", (function () { 
-class Component extends DCLogic {
-renderVals() {
-const base = this._baseVals() || {};
-const open = !!(this.state && this.state.menuOpen);
-return Object.assign({}, base, { menuOpen: open, menuClosed: !open, menuLabel: open ? 'Fermer le menu' : 'Ouvrir le menu', menuExpanded: open ? 'true' : 'false', toggleMenu: () => this.setState({ menuOpen: !open }) });
-}
-constructor(props) { super(props); this.state = { filtre: 'Tous' }; }
-_baseVals() {
-const acts = ['Tous'].concat(["Boxe", "HIIT", "Cardio non motorisé", "Renforcement", "Pilates", "Yoga"]);
-const all = [{"act": "Boxe", "tags": ["Boxe"], "n": 1, "nom": "Gocha M.", "bio": "Diplômée BPJEPS boxe, 8 ans d’expérience. Gocha t’apprend les bases techniques, puis te pousse au sac avec énergie et bonne humeur.", "photo": "images/img-5acad0f2.jpg"}, {"act": "Boxe", "tags": ["Boxe"], "n": 2, "nom": "Yanis B.", "bio": "Ancien boxeur amateur, 10 ans sur le ring. Garde, déplacements et cardio : des cours exigeants mais toujours bienveillants.", "photo": "images/img-c6d12198.jpg"}, {"act": "HIIT & Cardio", "tags": ["HIIT", "Cardio non motorisé"], "n": 3, "nom": "Hugo L.", "bio": "Coach certifié CrossFit L2, 6 ans d’expérience. Circuits courts et intenses, rameur et air bike : on se dépasse en groupe.", "photo": "images/img-84fa4dd2.jpg"}, {"act": "HIIT & Cardio", "tags": ["HIIT", "Cardio non motorisé"], "n": 4, "nom": "Masha R.", "bio": "BPJEPS Activités de la forme, 5 ans d’expérience. Masha enchaîne les exercices en rythme et adapte chaque mouvement à ton niveau.", "photo": "images/img-36afb77a.jpg"}, {"act": "Renforcement", "tags": ["Renforcement"], "n": 5, "nom": "Raph D.", "bio": "Force, tonicité et posture : Raph te fait progresser à ton rythme. Des séances progressives et encadrées pour des résultats durables.", "photo": "images/img-ff2ff88c.jpg"}, {"act": "Pilates", "tags": ["Pilates"], "n": 6, "nom": "Clara V.", "bio": "Gainage, souplesse et posture : un Pilates précis pour renforcer le corps en profondeur. Des séances douces et efficaces, adaptées à tous les niveaux.", "photo": "images/img-689cb41c.jpg"}, {"act": "Renforcement", "tags": ["Renforcement"], "n": 7, "nom": "Inès T.", "bio": "Préparatrice physique diplômée STAPS, 7 ans d’expérience. Squats, tirages, gainage : Inès soigne la technique avant la charge.", "photo": "images/img-40215da6.jpg"}, {"act": "Yoga", "tags": ["Yoga"], "n": 8, "nom": "Samuel A.", "bio": "Souplesse, respiration et équilibre : un yoga accessible à tous les niveaux. Des séances apaisantes pour relâcher les tensions et retrouver ton énergie.", "photo": "images/img-e9d1396d.jpg"}, {"act": "Pilates", "tags": ["Pilates"], "n": 9, "nom": "Marc F.", "bio": "Formé au Pilates matwork et reformer, 12 ans d’expérience. Des séances précises pour un dos solide et une meilleure posture.", "photo": "images/img-734f4351.jpg"}, {"act": "Yoga", "tags": ["Yoga"], "n": 10, "nom": "Amina N.", "bio": "Professeure de yoga certifiée 500 h, 9 ans d’expérience. Hatha et vinyasa doux pour respirer, t’étirer et te recentrer.", "photo": "images/img-4aa7b3d1.jpg"}];
-const f = this.state.filtre;
-const accents = ['#E7604F', '#7C3A44'];
-const coachs = all.filter((c) => f === 'Tous' || c.tags.indexOf(f) >= 0).map((c, i) => ({
-  act: c.act,
-  numero: 'Coach ' + c.n,
-  nom: c.nom || '[Prénom Nom]',
-  bio: c.bio || '[Diplôme · années d’expérience · une phrase sur son style]',
-  accent: accents[c.n % 2],
-  photo: c.photo,
-  hasPhoto: !!c.photo,
-  noPhoto: !c.photo
-}));
-const pills = acts.map((a) => {
-  const n = a === 'Tous' ? all.length : all.filter((c) => c.tags.indexOf(a) >= 0).length;
-  const on = a === f;
-  return {
-    label: a + ' (' + n + ')',
-    style: on ? 'background: #1B242D; color: #FFFFFF; border: 2px solid #1B242D;' : 'background: transparent; color: #1B242D; border: 2px solid #1B242D;',
-    pick: () => this.setState({ filtre: a })
-  };
-});
-return { pills: pills, coachs: coachs, total: coachs.length };
-}
-}
-
-  return Component; })());
+(function(){
+  var pills=document.querySelectorAll('.pill'), cartes=document.querySelectorAll('.coach'), info=document.getElementById('resultat');
+  pills.forEach(function(p){
+    p.addEventListener('click',function(){
+      var f=p.getAttribute('data-filtre'), n=0;
+      pills.forEach(function(x){x.setAttribute('aria-pressed',x===p?'true':'false');});
+      cartes.forEach(function(c){
+        var ok=f==='Tous'||c.getAttribute('data-tags').split('|').indexOf(f)>=0;
+        c.hidden=!ok; if(ok) n++;
+      });
+      info.textContent=n+' coach'+(n>1?'s':'')+' affiché'+(n>1?'s':'');
+    });
+  });
+})();
 </script>
 </body>
 </html>
